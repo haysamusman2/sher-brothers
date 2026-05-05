@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "Rent a Car in Lahore & Pakistan | Sher Brothers",
   description:
     "Book a rental car in Lahore or anywhere in Pakistan. Professional drivers, clean fleet, instant WhatsApp booking. Sher Brothers Rent a Car.",
+  robots: { index: false, follow: false },
   openGraph: {
     title: "Rent a Car in Lahore & Pakistan | Sher Brothers",
     description:
