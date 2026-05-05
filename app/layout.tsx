@@ -1,0 +1,46 @@
+import type { Metadata } from "next";
+import { Playfair_Display, DM_Sans } from "next/font/google";
+import "./globals.css";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair-display",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Rent a Car in Lahore & Pakistan | Sher Brothers",
+  description:
+    "Book a rental car in Lahore or anywhere in Pakistan. Professional drivers, clean fleet, instant WhatsApp booking. Sher Brothers Rent a Car.",
+  openGraph: {
+    title: "Rent a Car in Lahore & Pakistan | Sher Brothers",
+    description:
+      "Book a rental car in Lahore or anywhere in Pakistan. Professional drivers, clean fleet, instant WhatsApp booking. Sher Brothers Rent a Car.",
+    images: [
+      "https://sherbrotherpakistan.com/wp-content/uploads/2025/12/Rent-a-Car-Pakistan.webp",
+    ],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang="en"
+      className={`${playfair.variable} ${dmSans.variable}`}
+    >
+      <body className="bg-[#0A0A1A] text-white antialiased">
+        {children}
+      </body>
+    </html>
+  );
+}

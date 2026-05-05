@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand fonts — variables set by next/font on <html> */
+  --font-playfair: var(--font-playfair-display), serif;
+  --font-sans: var(--font-dm-sans), sans-serif;
+}
+
+@keyframes kenBurns {
+  from { transform: scale(1.0); }
+  to   { transform: scale(1.06); }
+}
+
+.ken-burns {
+  animation: kenBurns 8s ease-in-out forwards;
+}
