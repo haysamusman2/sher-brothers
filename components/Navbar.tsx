@@ -236,11 +236,11 @@ export default function Navbar() {
             <button
               onClick={() => setMobileOpen((v) => !v)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
-              className="lg:hidden flex flex-col justify-center gap-[5px] w-8 h-8"
+              className="lg:hidden flex flex-col justify-center items-center gap-[6px] w-10 h-10 rounded-md transition-colors hover:bg-white/5"
             >
-              <span className={`block h-[2px] bg-white transition-all duration-200 ${mobileOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
-              <span className={`block h-[2px] bg-white transition-all duration-200 ${mobileOpen ? "opacity-0" : ""}`} />
-              <span className={`block h-[2px] bg-white transition-all duration-200 ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+              <span className={`block h-[3px] w-6 bg-[#F5A623] rounded-full transition-all duration-200 ${mobileOpen ? "rotate-45 translate-y-[9px]" : ""}`} />
+              <span className={`block h-[3px] w-6 bg-[#F5A623] rounded-full transition-all duration-200 ${mobileOpen ? "opacity-0" : ""}`} />
+              <span className={`block h-[3px] w-6 bg-[#F5A623] rounded-full transition-all duration-200 ${mobileOpen ? "-rotate-45 -translate-y-[9px]" : ""}`} />
             </button>
           </div>
         </div>
